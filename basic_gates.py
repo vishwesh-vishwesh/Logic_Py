@@ -8,10 +8,22 @@ Created on Sun Jun  6 15:21:25 2021
 import numpy as np
 import scipy
 import matplotlib.pyplot as plt
-
-#%% OR gate
-
+#%%
 def OR (A,B):
+    """realisation of AND gate
+    
+    Parameters
+    ----------
+    A : list[]
+        0 or 1
+    B : list[]
+        0 or 1
+
+    Returns
+    -------
+    result : list[]
+
+    """
     result=[]
     for i in range(len(A)):
         
@@ -21,9 +33,22 @@ def OR (A,B):
             result.append(0)
     return result
 
-#%% AND gate
-
+#%%
 def AND (A,B):
+    """realisation of AND gate
+
+    Parameters
+    ----------
+    A : list[]
+        0 or 1
+    B : list[]
+        0 or 1
+
+    Returns
+    -------
+    result : list[]
+
+    """
     result=[]
     for i in range(len(A)):
         
@@ -33,8 +58,20 @@ def AND (A,B):
             result.append(0)
     return result
 
-#%% not
+#%%
 def NOT (A):
+    """realisation of NOT gate
+
+    Parameters
+    ----------
+    A : list[]
+        0 or 1
+
+    Returns
+    -------
+    result : list[]
+
+    """
     result=[]
     for i in range(len(A)):
         
@@ -44,8 +81,22 @@ def NOT (A):
             result.append(1)
     return result
                 
-#%% nand
+#%%
 def NAND (A,B):
+    """realisation of NAND gate
+
+    Parameters
+    ----------
+    A : list[]
+        0 or 1
+    B : list[]
+        0 or 1
+
+    Returns
+    -------
+    result : list[]
+        
+    """
     result=[]
     for i in range(len(A)):
         
@@ -55,9 +106,22 @@ def NAND (A,B):
             result.append(1)
     return result
 
-#%% nor
-
+#%%
 def NOR (A,B):
+    """realisation of NOR gate
+
+    Parameters
+    ----------
+    A : list[]
+        0 or 1
+    B : list[]
+        0 or 1
+
+    Returns
+    -------
+    result : list[]
+        
+    """
     result=[]
     for i in range(len(A)):
         
@@ -68,8 +132,21 @@ def NOR (A,B):
     return result
 
 #%% XNOR
-
 def XNOR (A,B):
+    """realisation of XNOR gate
+
+    Parameters
+    ----------
+    A : list[]
+        0 or 1
+    B : list[]
+        0 or 1
+
+    Returns
+    -------
+    result : list[]
+        
+    """
     result=[]
     for i in range(len(A)):
         
@@ -83,6 +160,20 @@ def XNOR (A,B):
 
 #%% XOR
 def XOR (A,B):
+    """realisation of XOR gate
+
+    Parameters
+    ----------
+    A : list[]
+        0 or 1
+    B : list[]
+        0 or 1
+
+    Returns
+    -------
+    result : list[]
+        
+    """
     result=[]
     for i in range(len(A)):
         
@@ -95,3 +186,5 @@ def XOR (A,B):
     return result
 
 #%%
+
+
