@@ -8,9 +8,7 @@ Created on Sun Jun  6 15:21:25 2021
 import numpy as np
 import scipy
 import matplotlib.pyplot as plt
-#%%
-#d = (int,input("number:"))
-     
+
 #%% OR gate
 
 def OR (A,B):
@@ -97,14 +95,3 @@ def XOR (A,B):
     return result
 
 #%%
-'''
-x =[0, 1, 1, 1, 1]
-y = [0, 1, 1, 1, 1]
-z = [0, 1, 1, 1, 0]
-
-aans = AND (AND (x,y), AND (x,z))
-#%%
-aans2= NOT(x)
-'''
-
-
