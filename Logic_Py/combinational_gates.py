@@ -8,7 +8,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from basic_gates import AND, OR, NOT, NAND, NOR,XNOR,XOR
 #%%
-def Birnary2Gray(A,B,C,D):
+def Binary2Gray(A,B,C,D):
     """4 bit Binary to Gray converter
     
     Parameters - input Binary code
