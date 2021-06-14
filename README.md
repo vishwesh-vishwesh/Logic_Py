@@ -1,5 +1,6 @@
 # Logic_Py
-[![Build Status](https://github.com/vishwesh-vishwesh/Logic_Py/releases/tag/v0.3.3-beta)](https://github.com/vishwesh-vishwesh/Logic_Py/releases/tag/v0.3.3-beta)
+
+[![Made with Python3](https://img.shields.io/badge/Made%20With-Python3-blue)](https://www.python.org/)
 
 This Python package enables the user to realise Logic based combinational circuits built on basic logic gates.
 All the inputs must be binary and of same length for the functions to perform desired operation. 
