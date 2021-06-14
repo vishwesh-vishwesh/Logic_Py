@@ -6,7 +6,7 @@ All the inputs must be binary and of same length for the functions to perform de
 ## Basic Gates
 
 There are 7 basic gates, all other secondaary and combinational gates are the combinations of these 7 basic gates.
--AND, OR, NOT, NAND, NOR,XNOR,XOR
+- AND, OR, NOT, NAND, NOR,XNOR,XOR
 
 ## Secondary Gates
 
