@@ -11,21 +11,21 @@ There are 7 basic gates, all other secondaary and combinational gates are the co
 ## Secondary Gates
 
 There are 16 Secondary gates, which take 4 binary inputs and 1 binary output.
--AND_AND, AND_OR, AND_NAND, AND_NOR, OR_AND, OR_OR, 
+- AND_AND, AND_OR, AND_NAND, AND_NOR, OR_AND, OR_OR, 
    OR_NAND, OR_NOR, NAND_AND, NAND_OR, NAND_NAND, 
    NAND_NOR, NOR_AND, NOR_OR, NOR_NAND, NOR_NOR,
 
 ## Combinational Gates
 Few combinational circuits are added as start in this beta version, few more will follow in the coming update.
--Binary2Gray, Gray2Binary, EParity_gen, EParity_check, OParity_gen, OParity_check
+- Binary2Gray, Gray2Binary, EParity_gen, EParity_check, OParity_gen, OParity_check
 
 ## Arithmatic Gates
 Two arithmatic gates are added for the beta version, more will follow in the coming update.
--Half Adder
--Full Adder
+- Half Adder
+- Full Adder
 
 ## Plots
 Plots for the basic gates, secondary gates and arithmatic gates are available with the current version.
-
+- plot_full_adder, plot_half_adder, plot_secondary, plot_basic
 Use [Github](https://github.com/vishwesh-vishwesh/Logic_Py/) for further updates. 
 Please kindly cite incase you use the package and fork.
