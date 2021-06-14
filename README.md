@@ -30,8 +30,8 @@ Few combinational circuits are added as start in this beta version, few more wil
 
 ## Arithmatic Gates
 Two arithmatic gates are added for the beta version, more will follow in the coming update.
-- Half Adder
-- Full Adder
+- Half Adder - half_adder
+- Full Adder - full_adder
 
 ## Plots
 Plots for the basic gates, secondary gates and arithmatic gates are available with the current version.
