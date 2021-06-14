@@ -10,7 +10,7 @@ All the inputs must be binary and of same length for the functions to perform de
 ## Installation
 - pip install logic-py
 - from Logic_Py import AND, full_adder, plot_secondary etc.,
-- 
+
 ## Basic Gates
 
 There are 7 basic gates, all other secondaary and combinational gates are the combinations of these 7 basic gates.
