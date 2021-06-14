@@ -27,5 +27,7 @@ Two arithmatic gates are added for the beta version, more will follow in the com
 ## Plots
 Plots for the basic gates, secondary gates and arithmatic gates are available with the current version.
 - plot_full_adder, plot_half_adder, plot_secondary, plot_basic
-Use [Github](https://github.com/vishwesh-vishwesh/Logic_Py/) for further updates. 
-Please kindly cite incase you use the package and fork.
+
+
+- Use [Github](https://github.com/vishwesh-vishwesh/Logic_Py/) for further updates. 
+- Please kindly cite incase you use the package and fork.
