@@ -9,4 +9,5 @@ from secondary_gates import AND_AND, AND_OR, AND_NAND, AND_NOR, OR_AND, OR_OR
 from secondary_gates import OR_NAND, OR_NOR, NAND_AND, NAND_OR, NAND_NAND, NAND_NOR 
 from secondary_gates import NOR_AND, NOR_OR, NOR_NAND, NOR_NOR
 from arithmatic_gates import half_adder,full_adder
+from combinational_gates import Binary2Gray, Gray2Binary,EParity_gen,EParity_check,OParity_gen,OParity_check
 from plotting import plot_full_adder, plot_half_adder, plot_secondary, plot_basic
