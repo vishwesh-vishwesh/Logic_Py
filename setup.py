@@ -4,7 +4,7 @@ Created on Sun Jun 13 19:06:08 2021
 
 @author: Vishwesh
 """
-import pathlib
+#import pathlib
 from setuptools import setup, find_packages
 
 #HERE = pathlib.Path(__file__).parent
@@ -35,3 +35,5 @@ setup(name=PACKAGE_NAME,
       install_requires=INSTALL_REQUIRES,
       packages=find_packages()
       )
+def __getitem__(self, group) -> EntryPoints:
+        return EntryPoints(ep for ep in self if ep.group == group)
