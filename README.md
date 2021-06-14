@@ -15,7 +15,7 @@ All the inputs must be binary and of same length for the functions to perform de
 
 There are 7 basic gates, all other secondaary and combinational gates are the combinations of these 7 basic gates.
 - AND, OR, NOT, NAND, NOR,XNOR,XOR
-- ex : from Logic_Py import AND
+- Ex : from Logic_Py import AND
 
 ## Secondary Gates
 
