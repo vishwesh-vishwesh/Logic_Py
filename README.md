@@ -55,7 +55,7 @@ from plotting import plot_half_subtractor
 x,y = plot_half_subtractor(B,C)
 ```
  Above snippet returns a plot of difference and Borrow and also loads difference and borrow onto the variables x and y.
-![Half Subtractor](https://github.com/vishwesh-vishwesh/Logic_Py/blob/main/Figure%202021-06-24%20073914.png "Logo Title Text 1")
+![Half Subtractor](https://github.com/vishwesh-vishwesh/Logic_Py/blob/main/Figure%202021-06-24%20073914.png "Half subtractor")
 
 
 # Introduction
@@ -71,7 +71,9 @@ from Logic_Py import AND, full_adder, plot_secondary etc.,
 
 There are 7 basic gates, all other secondaary and combinational gates are the combinations of these 7 basic gates.
 - AND, OR, NOT, NAND, NOR,XNOR,XOR
-- Ex : from Logic_Py import AND
+```python
+from Logic_Py import AND
+```
 
 ## Secondary Gates
 `secondary_gates`
@@ -88,7 +90,7 @@ Few combinational circuits are added as start in this beta version, few more wil
 ## Arithmatic Gates
 `arithmatic_gates`
 Two arithmatic gates are added for the beta version, more will follow in the coming update.
-*update 0.4.1 added subtractors
+*update 0.4.1 added subtractors*
 - Half Adder - `half_adder`
 - Full Adder - `full_adder`
 - Half Subtractor - `half_subtractor`
@@ -99,6 +101,7 @@ Two arithmatic gates are added for the beta version, more will follow in the com
 
 Plots for the basic gates, secondary gates and arithmatic gates are available with the current version.
 - plot_full_adder, plot_half_adder, plot_secondary, plot_basic
+- *update 0.4.1 added `plot_half_adder` and `plot_full_adder`
 
 ## Citation
 - [Tutorialspoint - digital circuit basics](https://www.tutorialspoint.com/digital_circuits)
