@@ -4,14 +4,12 @@ Created on Wed Jun  9 15:00:29 2021
 
 @author: Vishwesh
 """
-import numpy as np
-from scipy import signal
 import matplotlib.pyplot as plt
-from basic_gates import AND, OR, NOT, NAND, NOR,XNOR,XOR
+from basic_gates import AND, OR, NOT, NAND, NOR,XNOR,XOR,binary_check,length_check
 from secondary_gates import AND_AND, AND_OR, AND_NAND, AND_NOR, OR_AND, OR_OR 
 from secondary_gates import OR_NAND, OR_NOR, NAND_AND, NAND_OR, NAND_NAND, NAND_NOR 
 from secondary_gates import NOR_AND, NOR_OR, NOR_NAND, NOR_NOR
-from arithmatic_gates import half_adder,full_adder
+from arithmatic_gates import half_adder,full_adder,half_subtractor,full_subtractor
 
 #%% plots for basic gates
 
@@ -113,6 +111,45 @@ def plot_full_adder(A,B,Cin):
     return s,c    
 
 #%%
-
+def plot_half_subtractor(A,B):
+    difference,borrow = half_subtractor(A,B)
+    
+    plt.figure(3)
+    plt.subplot(2, 1, 1)
+    plt.xlim(0,len(difference))
+    plt.ylim(0,2)
+    plt.ylabel("Difference")
+    plt.grid(color = 'green', linestyle = '--', linewidth = 0.1,axis='x')
+    plt.plot(difference)
+    plt.subplot(2, 1, 2)
+    plt.xlim(0,len(borrow))
+    plt.ylim(0,2)
+    plt.ylabel("Borrow")
+    plt.grid(color = 'green', linestyle = '--', linewidth = 0.1,axis='x')
+    plt.xlabel("Instances")
+    plt.plot(borrow,color='r')
+    plt.show()
+    return difference,borrow  
+#%%
+def plot_full_subtractor(A,B,Bin):
+    difference,borrow = full_adder(A, B, Bin)
+    
+    plt.figure(3)
+    plt.subplot(2, 1, 1)
+    plt.xlim(0,len(difference))
+    plt.ylim(0,2)
+    plt.ylabel("difference")
+    plt.grid(color = 'green', linestyle = '--', linewidth = 0.1,axis='x')
+    plt.plot(difference)
+    plt.subplot(2, 1, 2)
+    plt.xlim(0,len(borrow))
+    plt.ylim(0,2)
+    plt.ylabel("Borrow")
+    plt.grid(color = 'green', linestyle = '--', linewidth = 0.1,axis='x')
+    plt.xlabel("Instances")
+    plt.plot(borrow,color='r')
+    plt.show()
+    return difference, borrow  
+#%%
 
 

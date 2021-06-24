@@ -4,7 +4,7 @@ Created on Sun Jun 13 11:01:59 2021
 
 @author: Vishwesh
 """
-from basic_gates import AND, OR, NOT, NAND, NOR,XNOR,XOR
+from basic_gates import AND, OR, NOT, NAND, NOR,XNOR,XOR,binary_check,length_check
 
 #%%
 def half_adder(A,B):
@@ -51,8 +51,52 @@ def full_adder(A,B,Cin):
     return S,Cout
 
 #%%
+def half_subtractor(A,B):
+    '''Half subtractor realisation
 
+    Parameters
+    ----------
+    A : list[]
+    B : list[]
 
+    Returns
+    -------
+    Difference : list[]
+                Difference of two inputs
+    Borrow : list[]
+                Borrow from two inputs
+    '''
+    Difference = XOR(A,B)
+    Borrow = AND(B,NOT(A))
+    return Difference,Borrow
+
+#%%
+def full_subtractor(A,B,Bin):
+    '''full subtractor realisation
+
+    Parameters
+    ----------
+    A : list[]
+    B : list[]
+    Bin : list[]
+        Borrow input bit
+
+    Returns
+    -------
+    Difference : list[]
+        Difference of three inputs
+    Borrow : list[]
+        Borrow from three inputs
+
+    '''
+    D_1 = XOR (A,B)
+    B_1 = AND (B,NOT(A))
+    Difference = XOR(D_1,Bin)
+    B_2 = AND (Bin,NOT(D_1))
+    Borrow = OR(B_2,B_1)
+    return Difference,Borrow
+
+#%%
 
 
 

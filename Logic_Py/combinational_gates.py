@@ -4,9 +4,9 @@ Created on Sat Jun 12 10:24:51 2021
 
 @author: Vishwesh
 """
-import numpy as np
-import matplotlib.pyplot as plt
+
 from basic_gates import AND, OR, NOT, NAND, NOR,XNOR,XOR
+from secondary_gates import  AND_OR
 #%%
 def Binary2Gray(A,B,C,D):
     """4 bit Binary to Gray converter
@@ -147,11 +147,63 @@ def OParity_check(A,B,C,P):
     return O
 #%%    
 
+def BCD2Excess3(A,B,C,D):
+    '''BCD to excess3 converter
+    
+    Parameters
+    ----------
+    A : list[]
+    B : list[]
+    C : list[]
+    D : list[]
 
+    Returns
+    -------
+    w : list[]
+    x : list[]
+    y : list[]
+    z : list[]
 
+    '''
+    z   = NOT(D)
+    y_1 = AND (D,C)
+    y_2 = OR (D,C)
+    y_3 = NOT(y_2)
+    y   = OR (y_1,y_3)
+    x_1 = NOT (B)
+    x   = AND_OR (y_3,B,y_2,x_1)
+    w_1 = AND (y_2,B)
+    w   = OR (w_1,A)
+    return w,x[2],y,z
+#%%
 
+def Excess32BCD(A,B,C,D):
+    '''Excess3 to BCD converter
 
+    Parameters
+    ----------
+    A : list[]
+    B : list[]
+    C : list[]
+    D : list[]
 
+    Returns
+    -------
+    w : list[]
+    x : list[]
+    y : list[]
+    z : list[]
 
+    '''
+    w1 = AND (C,D)
+    w = (AND_OR(A,w1,A,B))[2]
+    x1 = (AND_OR(NOT(B),NOT(C),NOT(B),NOT(D)))[2]
+    x2 = (AND(AND(B,C),D))
+    x = OR(x1,x2)
+    y = AND_OR(NOT(C),D,C,NOT(D))[2]
+    z = NOT(D)
+    return w,x,y,z
 
+#%%
+    
 
