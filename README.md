@@ -13,7 +13,7 @@ A = [1,0,1,3]
 B = [0,0,1,1]
 y = AND(A,B)
 ```
-Above code returns `ValueError: input must be binary, 0 or  1 in first input index 3`
+ Above code returns `ValueError: input must be binary, 0 or  1 in first input index 3`
 
 2. If all the input array lengths are not same, Again code throws a ValueError
 ```python
@@ -22,7 +22,7 @@ A = [1,0,1]
 B = [0,0,1,1]
 y = OR(A,B)
 ```
-Above code returns `ValueError: Length of both inputs must be same`
+ Above code returns `ValueError: Length of both inputs must be same`
 
 3. Half subtractor and Full subtractor are added to Arithmatic gates
 ```python
@@ -32,7 +32,7 @@ A = [0,0,0,1,0,1,1,0,1,1]
 Difference, Borrow = half_subtractor(A,B)
 print("Difference : ", Difference, "Borrow : ", Borrow)
 ```
-Above snippet returns Difference :  `Difference :  [1, 1, 0, 0, 1, 1, 1, 1, 1, 1] Borrow :  [0, 0, 0, 0, 0, 1, 1, 0, 1, 1]`
+ Above snippet returns Difference :  `Difference :  [1, 1, 0, 0, 1, 1, 1, 1, 1, 1] Borrow :  [0, 0, 0, 0, 0, 1, 1, 0, 1, 1]`
 
 4. Code conversions BCD to Excess3 and vice versa are added to Combinational circuits
 ```python
@@ -43,7 +43,7 @@ C = [0,1,0,1,0,1,0,0,0,0]
 D = [1,1,0,1,1,0,0,1,0,0]
 w,x,y,z = BCD2Excess3(A,B,C,D)
 ```
-Above code saves 4 coverted Excess3 bits in w,x,y,z
+ Above code saves 4 coverted Excess3 bits in w,x,y,z
 
 5. Encoders and Decoders are added to Logic circuits
 ```python
@@ -54,7 +54,9 @@ from Logic_circuits import Decoder2_4,Decoder4_16,Decoder3_8,Encoder2_1,Encoder4
 from plotting import plot_half_subtractor
 x,y = plot_half_subtractor(B,C)
 ```
-Above snippet returns a plot of difference and Borrow and also loads difference and borrow onto the variables x and y.
+ Above snippet returns a plot of difference and Borrow and also loads difference and borrow onto the variables x and y.
+![Half Subtractor](https://github.com/vishwesh-vishwesh/Logic_Py/blob/main/Figure%202021-06-24%20073914.png "Logo Title Text 1")
+
 
 # Introduction
 This Python package enables the user to realise Logic based combinational circuits built on basic logic gates.
