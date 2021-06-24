@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "Logic_Py"
-version = "0.3.3"
+version = "0.4.1"
 description = "Python Package to realize combinational logic gates"
 authors = ["Vishwesh <vishwesh.arush@gmail.com>"]
 keywords = ["python", "Logic gates"]
@@ -12,7 +12,8 @@ include = [
     "LICENSE",
 ]
 [tool.poetry.dependencies]
-python = "^3.7"
+python = "^3.0"
+numpy = "^1.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
