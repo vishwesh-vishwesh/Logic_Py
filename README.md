@@ -5,12 +5,13 @@
 [![Github version](https://img.shields.io/badge/version-0.4.1-green)](https://github.com/vishwesh-vishwesh/Logic_Py)
 
 ### *Update : Logic_Py 0.4.1*
-- If input array contains non-binary element, A ValueError is returned with the exact location of non-binary element in the input array
-
+- If input array contains a non-binary element, A ValueError is returned with the exact location of non-binary element in the input array
 ```python
-   x =[1,0,1,0,1]
-   y = NOT(x)
+A = [1,0,1,3]
+B = [0,0,1,1]
+y = AND(A,B)
 ```
+
 
 
 This Python package enables the user to realise Logic based combinational circuits built on basic logic gates.
