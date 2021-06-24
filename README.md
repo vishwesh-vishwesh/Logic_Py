@@ -7,10 +7,12 @@
 ### *Update : Logic_Py 0.4.1*
 - If input array contains a non-binary element, A ValueError is returned with the exact location of non-binary element in the input array
 ```python
+from basic_gates import AND
 A = [1,0,1,3]
 B = [0,0,1,1]
 y = AND(A,B)
 ```
+- returns `ValueError: input must be binary, 0 or  1 in first input index 3`
 
 
 
