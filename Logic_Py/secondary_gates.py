@@ -6,7 +6,7 @@ Created on Thu Jun 10 11:14:08 2021
 """
 import numpy as np
 import matplotlib.pyplot as plt
-from basic_gates import AND, OR, NOT, NAND, NOR,XNOR,XOR
+from basic_gates import AND, OR, NOT, NAND, NOR,XNOR,XOR, binary_check,length_check
 #%%
 def AND_AND (A,B,C,D):
     """realisation of AND-AND gate

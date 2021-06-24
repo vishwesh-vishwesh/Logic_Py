@@ -8,6 +8,30 @@ Created on Sun Jun  6 15:21:25 2021
 import numpy as np
 import scipy
 import matplotlib.pyplot as plt
+
+#%%
+
+def binary_check(A,B):
+    #args = list(args)
+    #ans = []
+    for i in range(len(A)):
+        if A[i] == 1 or A[i] == 0:
+            pass
+            if B[i] == 1 or B[i] == 0:
+                pass
+            else:
+                raise ValueError("input must be binary, 0 or 1 in second input index %d"%i)
+        else:
+            raise ValueError("input must be binary, 0 or  1 in first input index %d"%i)
+            
+#%%
+
+def length_check(A,B):
+    if len(A) == len(B):
+        pass
+    else:
+        raise ValueError("Length of both inputs must be same")
+        
 #%%
 def OR (A,B):
     """realisation of AND gate
@@ -24,6 +48,8 @@ def OR (A,B):
     result : list[]
 
     """
+    binary_check(A,B)
+    length_check(A, B)
     result=[]
     for i in range(len(A)):
         
@@ -31,6 +57,7 @@ def OR (A,B):
             result.append(1)
         else:
             result.append(0)
+        
     return result
 
 #%%
@@ -49,6 +76,8 @@ def AND (A,B):
     result : list[]
 
     """
+    binary_check(A,B)
+    length_check(A, B)
     result=[]
     for i in range(len(A)):
         
@@ -72,6 +101,7 @@ def NOT (A):
     result : list[]
 
     """
+    binary_check(A,A)
     result=[]
     for i in range(len(A)):
         
@@ -97,6 +127,8 @@ def NAND (A,B):
     result : list[]
         
     """
+    binary_check(A,B)
+    length_check(A,B)
     result=[]
     for i in range(len(A)):
         
@@ -122,6 +154,8 @@ def NOR (A,B):
     result : list[]
         
     """
+    binary_check(A,B)
+    length_check(A,B)
     result=[]
     for i in range(len(A)):
         
@@ -147,6 +181,8 @@ def XNOR (A,B):
     result : list[]
         
     """
+    binary_check(A,B)
+    length_check(A,B)
     result=[]
     for i in range(len(A)):
         
@@ -174,6 +210,8 @@ def XOR (A,B):
     result : list[]
         
     """
+    binary_check(A,B)
+    length_check(A,B)
     result=[]
     for i in range(len(A)):
         
@@ -186,5 +224,4 @@ def XOR (A,B):
     return result
 
 #%%
-
 
