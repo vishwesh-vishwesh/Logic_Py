@@ -6,11 +6,11 @@
 
 ### *Update : Logic_Py 0.4.1*
 - If input array contains non-binary element, A ValueError is returned with the exact location of non-binary element in the input array
-'python'
-'''python
+
+```python
    x =[1,0,1,0,1]
    y = NOT(x)
-'''
+```
 
 
 This Python package enables the user to realise Logic based combinational circuits built on basic logic gates.
