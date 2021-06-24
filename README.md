@@ -6,9 +6,10 @@
 
 ### *Update : Logic_Py 0.4.1*
 - If input array contains non-binary element, A ValueError is returned with the exact location of non-binary element in the input array
+'python'
 '''python
-x =[1,0,1,0,1]
-y = NOT(x)
+   x =[1,0,1,0,1]
+   y = NOT(x)
 '''
 
 
