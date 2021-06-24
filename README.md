@@ -64,7 +64,9 @@ All the inputs must be binary and of same length for the functions to perform de
 
 ## Installation
 `pip install logic-py`
-from Logic_Py import AND, full_adder, plot_secondary etc.,
+```python
+from Logic_Py import AND, full_adder, plot_secondary
+```
 
 ## Basic Gates
 `basic_gates`
