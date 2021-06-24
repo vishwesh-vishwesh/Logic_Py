@@ -4,7 +4,8 @@
 [![GitHub license](https://img.shields.io/badge/license-Apache2.0-blue.svg)](https://github.com/vishwesh-vishwesh/Logic_Py/blob/main/LICENSE)
 [![Github version](https://img.shields.io/badge/version-0.3.4-green)](https://github.com/vishwesh-vishwesh/Logic_Py)
 
-*Update Logic_Py 0.4.1*
+## *Update Logic_Py 0.4.1*
+
 
 This Python package enables the user to realise Logic based combinational circuits built on basic logic gates.
 All the inputs must be binary and of same length for the functions to perform desired operation. 
