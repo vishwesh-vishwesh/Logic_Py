@@ -2,9 +2,13 @@
 
 [![Made with Python3](https://img.shields.io/badge/Made%20With-Python3-green)](https://www.python.org/)
 [![GitHub license](https://img.shields.io/badge/license-Apache2.0-blue.svg)](https://github.com/vishwesh-vishwesh/Logic_Py/blob/main/LICENSE)
-[![Github version](https://img.shields.io/badge/version-0.3.4-green)](https://github.com/vishwesh-vishwesh/Logic_Py)
+[![Github version](https://img.shields.io/badge/version-0.4.1-green)](https://github.com/vishwesh-vishwesh/Logic_Py)
 
-## *Update Logic_Py 0.4.1*
+### *Update : Logic_Py 0.4.1*
+- If input array contains non-binary element, A ValueError is returned with the exact location of non-binary element in the input array
+'''python
+pip install logic-py
+'''
 
 
 This Python package enables the user to realise Logic based combinational circuits built on basic logic gates.
