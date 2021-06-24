@@ -7,7 +7,8 @@
 ### *Update : Logic_Py 0.4.1*
 - If input array contains non-binary element, A ValueError is returned with the exact location of non-binary element in the input array
 '''python
-pip install logic-py
+x =[1,0,1,0,1]
+y = NOT(x)
 '''
 
 
